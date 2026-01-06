@@ -1,0 +1,11 @@
+behavior:
+  name: filesystem
+  version: 1.3.0
+  description: Interacting with the filesystem
+tools:
+- id: filesystem
+  source: amp://microsoft/tools/filesystem
+  config:
+    # Guardrails to prevent context overflow when reading large files
+    max_lines: 2000
+    max_tokens: 50000

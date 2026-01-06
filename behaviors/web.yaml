@@ -1,0 +1,14 @@
+behavior:
+  name: web
+  version: 1.2.0
+  description: World Wide Web interaction and browsing
+  requires:
+    - id: task-management
+      source: amp://microsoft/behaviors/task-management.yaml
+tools:
+- id: web
+  source: amp://microsoft/tools/web
+- id: search
+  source: amp://microsoft/tools/search
+instructions: |
+  - When web_fetch returns a message about a redirect to a different host, you should immediately make a new web_fetch request with the redirect URL provided in the response.

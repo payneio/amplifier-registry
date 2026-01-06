@@ -1,0 +1,10 @@
+behavior:
+  name: issues-auto-work
+  version: 0.1.0
+  description: A behavior to allow autonomous issue management with persistent tracking.
+  requires:
+    - id: issue-management
+      source: amp://microsoft/behaviors/issue-management.yaml
+hooks:
+  - id: issue-auto-work
+    source: amp://microsoft/hooks/issue-auto-work

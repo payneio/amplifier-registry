@@ -1,0 +1,14 @@
+behavior:
+  name: redaction
+  version: 1.0.0
+  description: Redaction hooks for sensitive data handling
+hooks:
+  - id: redaction
+    source: amp://microsoft/hooks/redaction
+    config:
+      allowlist:
+        - session_id
+        - turn_id
+        - span_id
+        - parent_span_id
+        - result.output.session_id

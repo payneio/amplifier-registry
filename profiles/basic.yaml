@@ -1,0 +1,56 @@
+profile:
+  name: basic
+  version: 1.1.0
+  description: Basic assistant configuration with core functionality, tools, and hooks
+  schema_version: 2
+orchestrator:
+  id: streaming
+  source: amp://microsoft/orchestrator/streaming
+  config:
+    extended_thinking: true
+context:
+  id: simple
+  source: amp://microsoft/context/simple
+  config:
+    max_tokens: 400000
+    compact_threshold: 0.8
+    auto_compact: true
+providers:
+- id: anthropic
+  source: amp://microsoft/providers/anthropic
+  config:
+    default_model: claude-opus-4-5
+    max_tokens: 16384
+    debug: true
+    raw_debug: true
+contexts:
+- id: foundation
+  source: amp://microsoft/contexts/foundation
+- id: lakehouse
+  source: amp://microsoft/contexts/lakehouse
+behaviors:
+- id: command-line
+  source: amp://microsoft/behaviors/command-line.yaml
+- id: exploration
+  source: amp://microsoft/behaviors/exploration.yaml
+- id: filesystem
+  source: amp://microsoft/behaviors/filesystem.yaml
+- id: logging
+  source: amp://microsoft/behaviors/logging.yaml
+- id: redaction
+  source: amp://microsoft/behaviors/redaction.yaml
+- id: streaming-ui
+  source: amp://microsoft/behaviors/streaming-ui.yaml
+- id: task-management
+  source: amp://microsoft/behaviors/task-management.yaml
+- id: timely
+  source: amp://microsoft/behaviors/timely.yaml
+- id: ui
+  source: amp://microsoft/behaviors/ui.yaml
+- id: web
+  source: amp://microsoft/behaviors/web.yaml
+
+instructions: |
+  You are an AI assistant powered by Amplifier.
+  @lakehouse:lakehouse.md
+  @foundation:common-profile-base.md

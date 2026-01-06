@@ -1,0 +1,7 @@
+behavior:
+  name: streaming-ui
+  version: 1.0.0
+  description: Streaming UI hooks for progressive display
+hooks:
+  - id: streaming-ui
+    source: amp://microsoft/hooks/streaming-ui

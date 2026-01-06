@@ -1,0 +1,7 @@
+behavior:
+  name: logging
+  version: 1.0.0
+  description: Logging hooks for session and event logging
+hooks:
+  - id: logging
+    source: amp://microsoft/hooks/logging

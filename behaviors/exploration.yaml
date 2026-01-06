@@ -1,0 +1,7 @@
+behavior:
+  name: exploration
+  version: 1.2.0
+  description: Exploring context
+agents:
+- id: explorer
+  source: amp://microsoft/agents/explorer.md

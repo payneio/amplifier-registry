@@ -1,0 +1,28 @@
+profile:
+  name: bare-essentials
+  version: 1.0.0
+  description: Assistant configuration with only essential components
+  schema_version: 3
+
+orchestrator:
+  id: basic
+  source: amp://microsoft/orchestrator/basic
+context:
+  id: simple
+  source: amp://microsoft/context/simple
+providers:
+- id: anthropic
+  source: amp://microsoft/providers/anthropic
+  config:
+    default_model: claude-opus-4-5
+contexts:
+- id: foundation
+  source: amp://microsoft/contexts/foundation
+- id: lakehouse
+  source: amp://microsoft/contexts/lakehouse
+instructions: |
+  You are an AI assistant powered by Amplifier.
+
+  Be helpful, accurate, and efficient in your responses.
+
+  @lakehouse:lakehouse.md

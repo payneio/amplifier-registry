@@ -1,0 +1,54 @@
+profile:
+  name: software-developer
+  version: 1.2.0
+  description: Development configuration with full toolset
+  schema_version: 3
+
+orchestrator:
+  id: streaming
+  source: amp://microsoft/orchestrator/streaming
+context:
+  id: persistent
+  source: amp://microsoft/context/persistent
+providers:
+  - id: anthropic
+    source: amp://microsoft/providers/anthropic
+    config:
+      default_model: claude-opus-4-5
+      max_tokens: 16384
+      debug: true
+      raw_debug: true
+contexts:
+  - id: foundation
+    source: amp://microsoft/contexts/foundation
+  - id: software-development
+    source: amp://microsoft/contexts/software-development
+  - id: lakehouse
+    source: amp://microsoft/contexts/lakehouse
+instructions: |
+  You are an AI assistant powered by Amplifier.
+  @lakehouse:lakehouse.md
+  @foundation:common-profile-base.md
+  @software-development:software-development-base.md
+
+behaviors:
+- id: software-development
+  source: amp://microsoft/behaviors/software-development.yaml
+- id: issue-management
+  source: amp://microsoft/behaviors/issue-management.yaml
+- id: redaction
+  source: amp://microsoft/behaviors/redaction.yaml
+- id: logging
+  source: amp://microsoft/behaviors/logging.yaml
+- id: streaming-ui
+  source: amp://microsoft/behaviors/streaming-ui.yaml
+- id: ui
+  source: amp://microsoft/behaviors/ui.yaml
+- id: command-line
+  source: amp://microsoft/behaviors/command-line.yaml
+- id: filesystem
+  source: amp://microsoft/behaviors/filesystem.yaml
+- id: task-management
+  source: amp://microsoft/behaviors/task-management.yaml
+- id: web
+  source: amp://microsoft/behaviors/web.yaml

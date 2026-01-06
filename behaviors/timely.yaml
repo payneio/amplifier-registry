@@ -1,0 +1,11 @@
+behavior:
+  name: timely
+  version: 0.1.0
+  description: Injects the time into context.
+hooks:
+- id: status-context
+  source: amp://microsoft/hooks/status-context
+  config:
+    include_datetime: true
+    datetime_include_timezone: false
+    include_git: false

@@ -1,0 +1,60 @@
+[submodule "providers/anthropic"]
+	path = providers/anthropic
+	url = https://github.com/microsoft/amplifier-module-provider-anthropic.git
+[submodule "providers/openai"]
+	path = providers/openai
+	url = https://github.com/microsoft/amplifier-module-provider-openai.git
+[submodule "providers/azure-openai"]
+	path = providers/azure-openai
+	url = https://github.com/microsoft/amplifier-module-provider-azure-openai.git
+[submodule "providers/ollama"]
+	path = providers/ollama
+	url = https://github.com/microsoft/amplifier-module-provider-ollama.git
+[submodule "providers/vllm"]
+	path = providers/vllm
+	url = https://github.com/microsoft/amplifier-module-provider-vllm.git
+[submodule "tools/web"]
+	path = tools/web
+	url = https://github.com/microsoft/amplifier-module-tool-web.git
+[submodule "tools/todo"]
+	path = tools/todo
+	url = https://github.com/microsoft/amplifier-module-tool-todo.git
+[submodule "tools/task"]
+	path = tools/task
+	url = https://github.com/microsoft/amplifier-module-tool-task.git
+[submodule "tools/search"]
+	path = tools/search
+	url = https://github.com/microsoft/amplifier-module-tool-search.git
+[submodule "tools/filesystem"]
+	path = tools/filesystem
+	url = https://github.com/microsoft/amplifier-module-tool-filesystem.git
+[submodule "tools/bash"]
+	path = tools/bash
+	url = https://github.com/microsoft/amplifier-module-tool-bash.git
+[submodule "orchestrator/basic"]
+	path = orchestrator/basic
+	url = https://github.com/microsoft/amplifier-module-loop-basic.git
+[submodule "orchestrator/streaming"]
+	path = orchestrator/streaming
+	url = https://github.com/microsoft/amplifier-module-loop-streaming.git
+[submodule "hooks/logging"]
+	path = hooks/logging
+	url = https://github.com/microsoft/amplifier-module-hooks-logging.git
+[submodule "hooks/redaction"]
+	path = hooks/redaction
+	url = https://github.com/microsoft/amplifier-module-hooks-redaction.git
+[submodule "hooks/status-context"]
+	path = hooks/status-context
+	url = https://github.com/microsoft/amplifier-module-hooks-status-context.git
+[submodule "hooks/streaming-ui"]
+	path = hooks/streaming-ui
+	url = https://github.com/microsoft/amplifier-module-hooks-streaming-ui.git
+[submodule "hooks/todo-reminder"]
+	path = hooks/todo-reminder
+	url = https://github.com/microsoft/amplifier-module-hooks-todo-reminder.git
+[submodule "context/persistent"]
+	path = context/persistent
+	url = https://github.com/microsoft/amplifier-module-context-persistent.git
+[submodule "context/simple"]
+	path = context/simple
+	url = https://github.com/microsoft/amplifier-module-context-simple.git
