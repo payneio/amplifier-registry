@@ -4,19 +4,19 @@ profile:
   description: Basic assistant configuration with core functionality, tools, and hooks
   schema_version: 2
 orchestrator:
-  id: streaming
+  id: loop-streaming
   source: amp://microsoft/orchestrator/streaming
   config:
     extended_thinking: true
 context:
-  id: simple
-  source: amp://microsoft/context/simple
+  id: context-persistent
+  source: amp://microsoft/context/persistent
   config:
     max_tokens: 400000
     compact_threshold: 0.8
     auto_compact: true
 providers:
-- id: anthropic
+- id: provider-anthropic
   source: amp://microsoft/providers/anthropic
   config:
     default_model: claude-opus-4-5

@@ -5,13 +5,13 @@ profile:
   schema_version: 3
 
 orchestrator:
-  id: streaming
+  id: loop-streaming
   source: amp://microsoft/orchestrator/streaming
 context:
-  id: persistent
+  id: context-persistent
   source: amp://microsoft/context/persistent
 providers:
-  - id: anthropic
+  - id: provider-anthropic
     source: amp://microsoft/providers/anthropic
     config:
       default_model: claude-opus-4-5

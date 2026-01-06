@@ -5,13 +5,13 @@ profile:
   schema_version: 3
 
 orchestrator:
-  id: basic
+  id: loop-basic
   source: amp://microsoft/orchestrator/basic
 context:
-  id: simple
+  id: context-simple
   source: amp://microsoft/context/simple
 providers:
-- id: anthropic
+- id: provider-anthropic
   source: amp://microsoft/providers/anthropic
   config:
     default_model: claude-opus-4-5
