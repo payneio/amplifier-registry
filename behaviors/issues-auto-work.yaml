@@ -6,5 +6,5 @@ behavior:
     - id: issue-management
       source: amp://microsoft/behaviors/issue-management.yaml
 hooks:
-  - id: issue-auto-work
+  - id: hook-issue-auto-work
     source: amp://microsoft/hooks/issue-auto-work

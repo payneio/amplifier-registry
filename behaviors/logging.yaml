@@ -3,5 +3,5 @@ behavior:
   version: 1.0.0
   description: Logging hooks for session and event logging
 hooks:
-  - id: logging
+  - id: hook-logging
     source: amp://microsoft/hooks/logging

@@ -3,7 +3,7 @@ behavior:
   version: 1.0.0
   description: Redaction hooks for sensitive data handling
 hooks:
-  - id: redaction
+  - id: hook-redaction
     source: amp://microsoft/hooks/redaction
     config:
       allowlist:

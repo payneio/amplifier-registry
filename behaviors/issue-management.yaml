@@ -3,7 +3,7 @@ behavior:
   version: 0.1.0
   description: A behavior to allow autonomous issue management with persistent tracking.
 tools:
-  - id: task
+  - id: tool-task
     source: amp://microsoft/tools/task
-  # - id: tool-issue  # TODO: Create this tool
-  #   source: amp://microsoft/tools/tool-issue
+  # - id: issue  # TODO: Create this tool
+  #   source: amp://microsoft/tools/issue

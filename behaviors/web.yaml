@@ -6,9 +6,9 @@ behavior:
     - id: task-management
       source: amp://microsoft/behaviors/task-management.yaml
 tools:
-- id: web
+- id: tool-web
   source: amp://microsoft/tools/web
-- id: search
+- id: tool-search
   source: amp://microsoft/tools/search
 instructions: |
   - When web_fetch returns a message about a redirect to a different host, you should immediately make a new web_fetch request with the redirect URL provided in the response.

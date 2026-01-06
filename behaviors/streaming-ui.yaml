@@ -3,5 +3,5 @@ behavior:
   version: 1.0.0
   description: Streaming UI hooks for progressive display
 hooks:
-  - id: streaming-ui
+  - id: hook-streaming-ui
     source: amp://microsoft/hooks/streaming-ui

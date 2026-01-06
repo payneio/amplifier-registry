@@ -3,13 +3,13 @@ behavior:
   version: 1.0.0
   description: Running recipes
 tools:
-- id: recipes
+- id: tool-recipes
   source: amp://microsoft/tools/recipes
   config:
     session_dir: ~/.amplifier/projects
     auto_cleanup_days: 7
 hooks:
-- id: streaming-ui
+- id: hook-streaming-ui
   source: amp://microsoft/hooks/streaming-ui
   config:
     ui:
@@ -17,6 +17,6 @@ hooks:
       show_thinking_stream: true
       show_token_usage: true
 instructions: |
-  You are an agent that runs recipes using the tool-recipes tool.
+  You are an agent that runs recipes using the recipes tool.
 
-  When given a recipe name or description, use the tool-recipes tool to find and execute the appropriate recipe.
+  When given a recipe name or description, use the recipes tool to find and execute the appropriate recipe.

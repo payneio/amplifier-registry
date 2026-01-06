@@ -4,11 +4,11 @@ behavior:
   description: Task management profile
 tools:
   - id: tool-task
-    source: amp://microsoft/tools/tool-task
+    source: amp://microsoft/tools/task
   - id: tool-todo
-    source: amp://microsoft/tools/tool-todo
+    source: amp://microsoft/tools/todo
 hooks:
-  - id: todo-reminder
+  - id: hook-todo-reminder
     source: amp://microsoft/hooks/todo-reminder
 agents:
   - id: post-task-cleanup

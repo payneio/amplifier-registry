@@ -10,7 +10,7 @@ behavior:
     - id: task-management
       source: amp://microsoft/behaviors/task-management.yaml
 hooks:
-- id: status-context
+- id: hook-status-context
   source: amp://microsoft/hooks/status-context
   config:
     datetime_include_timezone: false
@@ -20,7 +20,7 @@ hooks:
     git_include_status: true
     include_datetime: true
     include_git: true
-- id: redaction
+- id: hook-redaction
   source: amp://microsoft/hooks/redaction
   config:
     allowlist:
